@@ -1,111 +1,62 @@
-.header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.centred {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.header-section {
-    margin: 0 10px;
-}
-
-
+/* Apply general styles to the body */
 body {
-    margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+  background-image: url('my-bg-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
 }
 
-.header {
-    text-align: center;
-    background-image: url('IMG4.jpg');
-    background-size: cover;
-    background-position: center;
-    color: black;
-    padding: 50px;
+/* Style for labels */
+label {
+  display: block;
+  margin-bottom: 10px;
 }
 
-.header h1 {
-    margin: 0;
+/* Styles for input and select elements */
+input, select {
+  width: 200px; /* Set width for input and select */
+  padding: 10px; /* Increased padding for a more spacious feel */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px; /* Added border-radius for smooth edges */
+  background-color: #f2f2f2;
+  color: #333;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition on background and transform */
 }
 
-.content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px;
+/* Styles for input and select on focus */
+input:focus, select:focus {
+  outline: none;
+  background-color: #fff; /* Change background color on focus */
+  transform: scale(1.02); /* Add a subtle scale effect on focus */
 }
 
-.text {
-    max-width: 600px;
-    margin-left: 20px; /* Adjusted margin-left value */
+/* Styles for the button */
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for depth */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition on background and transform */
 }
 
-h2 {
-    text-align: left;
-    color: #333;
+/* Styles for the button on hover */
+button:hover {
+  background-color: #45a049; /* Change background color on hover */
+  transform: scale(1.05); /* Add a slightly larger scale effect on hover */
 }
 
-.profile-image {
-    width: 400px;
-    height: 800px; /* Adjusted height for a rectangular shape */
-    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
-    border: 2px solid #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-
-.text p {
-    font-size: 20px;
-}
-/* Add this to your existing styles.css file or create a new one */
-
-.quotation-section {
-    background-color: #f8f8f8; /* Background color for the quotation section */
-    padding: 20px;
-}
-
-.quotation {
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-.quotation blockquote {
-    font-style: italic;
-    color: #2e86de; /* Set the color for the quote text */
-}
-
-.quotation footer {
-    display: block;
-    text-align: right;
-    margin-top: 10px;
-    color: #3498db; /* Set the color for the footer text */
-}
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-.footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.footer a {
-    color: #fff;
-    text-decoration: none;
+/* Styles for the result element */
+#result {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
 }
