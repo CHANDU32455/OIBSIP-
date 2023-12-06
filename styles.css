@@ -1,0 +1,62 @@
+/* Apply general styles to the body */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+  background-image: url('my-bg-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* Style for labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Styles for input and select elements */
+input, select {
+  width: 200px; /* Set width for input and select */
+  padding: 10px; /* Increased padding for a more spacious feel */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px; /* Added border-radius for smooth edges */
+  background-color: #f2f2f2;
+  color: #333;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition on background and transform */
+}
+
+/* Styles for input and select on focus */
+input:focus, select:focus {
+  outline: none;
+  background-color: #fff; /* Change background color on focus */
+  transform: scale(1.02); /* Add a subtle scale effect on focus */
+}
+
+/* Styles for the button */
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for depth */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition on background and transform */
+}
+
+/* Styles for the button on hover */
+button:hover {
+  background-color: #45a049; /* Change background color on hover */
+  transform: scale(1.05); /* Add a slightly larger scale effect on hover */
+}
+
+/* Styles for the result element */
+#result {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
